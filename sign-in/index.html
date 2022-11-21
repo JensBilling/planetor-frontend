@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/planetor/sign-in/styles.css">
+    <link rel="icon" type="image/x-icon" href="/planetor/images/favicon.ico">
+    <title>PlanetoR Signin</title>
+</head>
+<body>
+<h1>Sign up</h1>
+<div id="content"></div>
+<form>
+    <input type="text" placeholder="Username" id="sign-up-username">
+    <input type="email"  placeholder="Email" id="sign-up-email">
+    <input type="password" placeholder="Password" id="sign-up-password">
+    <input type="submit" value="Submit" onclick="signUp()">
+</form>
+
+<h1>Sign in</h1>
+<form>
+    <input type="text" placeholder="Username or Email" id="sign-in-username">
+    <input type="password" placeholder="Password" id="sign-in-password">
+    <input type="submit" value="Submit" onclick="signIn()">
+</form>
+
+<div id="response-message"></div>
+
+<script src="/planetor/sign-in/js.js">
+</script>
+</body>
+</html>

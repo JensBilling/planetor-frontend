@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/planetor/images/favicon.ico">
+    <title>PlanetoR</title>
+</head>
+<body>
+
+<div id="grid-container">
+    <div class="grid-item" id="top-bar">
+        <div class="celestial-body-icon" id="sun-icon" onclick="displaySolarSystem()"></div>
+        <div class="celestial-body-icon" id="mercury-icon" onclick="fetchCelestialBody(1)"></div>
+        <div class="celestial-body-icon" id="venus-icon" onclick="fetchCelestialBody(2)"></div>
+        <div class="celestial-body-icon" id="earth-icon" onclick="fetchCelestialBody(3)"></div>
+        <div class="celestial-body-icon" id="moon-icon" onclick="fetchCelestialBody(4)"></div>
+        <div class="celestial-body-icon" id="mars-icon" onclick="fetchCelestialBody(5)"></div>
+        <div class="celestial-body-icon" id="jupiter-icon" onclick="fetchCelestialBody(6)"></div>
+        <div class="celestial-body-icon" id="saturn-icon" onclick="fetchCelestialBody(7)"></div>
+        <div class="celestial-body-icon" id="uranus-icon" onclick="fetchCelestialBody(8)"></div>
+        <div class="celestial-body-icon" id="neptune-icon" onclick="fetchCelestialBody(9)"></div>
+        <div class="celestial-body-icon" id="pluto-icon" onclick="fetchCelestialBody(10)"></div>
+    </div>
+
+    <div class="grid-item" id="left-bar">
+        <h1 class="left-bar-link" id="iss-button" onclick="fetchSatellite(25544)">Live ISS</h1>
+        <h1 class="left-bar-link">
+            <a href="https://www.nasa.gov/specials/artemis/">Artemis missions</a></h1>
+        <h1 class="left-bar-link"><a href="https://www.spacex.com/">SpaceX</a></h1>
+    </div>
+
+    <div class="grid-item" id="content">
+        <div id="content-container"></div>
+    </div>
+</div>
+
+<div id="auth"></div>
+
+<script src="js.js">
+</script>
+</body>
+</html>

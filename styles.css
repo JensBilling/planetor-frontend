@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+
+}
+
+#grid-container {
+    width: 1200px;
+    height: 800px;
+    margin: auto auto;
+    display: grid;
+    grid-template-areas:
+'top top top top top top'
+'left right right right right right';
+
+}
+
+.grid-item {
+
+}
+
+#top-bar {
+    height: 120px;
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-gap: 28px;
+    border-bottom: solid white 1px;
+}
+
+#left-bar {
+    grid-area: left;
+    height: 680px;
+    width: 250px;
+    color: white;
+}
+
+.left-bar-link {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+#content {
+    grid-area: right;
+    height: 680px;
+    width: 950px;
+}
+
+.celestial-body-icon {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#sun-icon {
+    background-image: url("images/sun.png");
+}
+
+#mercury-icon {
+    background-image: url("images/mercury.png");
+}
+
+#venus-icon {
+    background-image: url("images/venus.png");
+}
+
+#earth-icon {
+    background-image: url("images/earth.png");
+}
+
+#moon-icon {
+    background-image: url("images/moon.png");
+}
+
+#mars-icon {
+    background-image: url("images/mars.png");
+}
+
+#jupiter-icon {
+    background-image: url("images/jupiter.png");
+}
+
+#saturn-icon {
+    background-image: url("images/saturn.png");
+    margin-left: 10px;
+    width: 100px;
+}
+
+#uranus-icon {
+    background-image: url("images/uranus.png");
+}
+
+#neptune-icon {
+    background-image: url("images/neptune.png");
+}
+
+#pluto-icon {
+    background-image: url("images/pluto.png");
+}
+
+#content-container {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#iss-button {
+    cursor: pointer;
+}
+
+#auth {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+#response-message {
+    color: white;
+    font-family: sans-serif;
+}
